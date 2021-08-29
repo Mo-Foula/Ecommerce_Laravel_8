@@ -5,6 +5,10 @@ use Illuminate\Support\Facades\Route;
 use App\http\Livewire\HomeComponent;
 use App\Http\Livewire\User\UserDashboardComponent;
 use App\Http\Livewire\Vender\VenderDashboardComponent;
+use App\Http\Livewire\Vender\VenderAddProductComponent;
+use App\Http\Livewire\Vender\VenderProductComponent;
+use App\Providers\RouteServiceProvider;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,4 +38,6 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function(){
 //for vender
 Route::middleware(['auth:sanctum', 'verified','authvender'])->group(function(){
     Route::get('/vender/dashboard',VenderDashboardComponent::class)->name('vender.dashboard');
+    Route::get('/vender/product',VenderProductComponent::class)->name('vender.products');
+    Route::get('/vender/product/add',VenderAddProductComponent::class)->name('vender.addproduct');
 });
