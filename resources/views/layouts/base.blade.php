@@ -74,7 +74,7 @@
 									@auth
 										@if(Auth::user()->utype ==='VEN')
 										<li class="menu-item menu-item-has-children parent">
-											<a title="My Account" href="#">My Account({{Auth::user()->name}})<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+											<a title="My Account" href="{{route('user.account',['id'=>Auth::user()->id])}}">My Account ( {{Auth::user()->name}} )<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 											<ul class="submenu curency">
 {{--												<li class="menu-item">--}}
 {{--													<a title="Dashboard" href="{{ route('vender.dashboard')}}">Dashboard</a>--}}
@@ -94,10 +94,10 @@
 										</li>
                                         @elseif(Auth::user()->utype ==='USR')
 										<li class="menu-item menu-item-has-children parent">
-											<a title="My Account" href="#">My Account({{Auth::user()->name}})<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+											<a title="My Account" href="{{route('user.account',['id'=>Auth::user()->id])}}">My Account ( {{Auth::user()->name}} )<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 											<ul class="submenu curency">
 												<li class="menu-item">
-													<a title="My Account" href="{{route('user.account')}}">My Account</a>
+													<a title="My Account" href="{{route('user.account',['id'=>Auth::user()->id])}}">My Account</a>
 												</li>
                                                 <li class="menu-item">
                                                     <a title="Purchase History" href="{{route('user.purchase_history')}}">Purchase History</a>
@@ -112,10 +112,10 @@
 										</li>
                                         @else
                                             <li class="menu-item menu-item-has-children parent">
-                                                <a title="My Account" href="#">My Account({{Auth::user()->name}})<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                                <a title="My Account" href="{{route('user.account',['id'=>Auth::user()->id])}}">My Account ( {{Auth::user()->name}} )<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                                                 <ul class="submenu curency">
                                                     <li class="menu-item">
-                                                        <a title="Discounts" href="{{ route('admin.discount')}}">Discounts</a>
+                                                        <a title="Discounts" href="{{ route('admin.coupon')}}">Discounts</a>
                                                     </li>
                                                     <li class="menu-item">
                                                         <a title="Products" href="{{ route('admin.products')}}">Products</a>
