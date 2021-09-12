@@ -22,12 +22,13 @@ class UserEditProfile extends Component
   }
   public function updateUser()
   {
-    $users = Users::where('id',$this->id)->get();
+    $users =  Users::where('id',$this->id)->get();
+    echo "$users";
     $users->name = $this->name;
     $users->email = $this->email;
     $users->password = $this->password;
     $users->utype = $this->utype;
-    $users->save();
+    // $users->save();
   }
     public function render()
     {

@@ -14,16 +14,11 @@
       <label for="">Enter new Password : </label>
       <input style="margin: 10px;"  wire:model="password" type="password"  value="{{$user->password}}" required>
       <br>
-      <label for="">Change type of the user : </label>
-      <select id="cars" wire:model="utype" style="margin: 10px;">
-      <option selected value="User">User</option>
-      <option value="Admin">Admin</option>
-      <option value="Vendor">Vendor</option>
-      </select>
-    <?php endforeach; ?>
     <br>
     <button style="margin-top: 5px;" type="submit">Submit</button>
   </fieldset>
   </form>
+    <center><a href="{{route('user.account',['id'=>$user->id])}}" style="color: #ff2832;"><button style="margin-bottom: 5px; margin-top: 5px;">Back</button></a></center>
+          <?php endforeach; ?>
 </div>
 </div>
