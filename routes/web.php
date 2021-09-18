@@ -27,8 +27,8 @@ use App\Providers\RouteServiceProvider;
 //     return view('welcome');
 // });
 
-Route::get('/',HomeComponent::class);
-Route::get('/index',HomeComponent::class);
+Route::get('/',HomeComponent::class)->name('Home');
+
 
 
 Route::get('/contact_us',\App\Http\Livewire\ContactUsComponent::class)->name('contact_us');

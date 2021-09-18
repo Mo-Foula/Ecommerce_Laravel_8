@@ -16,7 +16,6 @@ class AdminAddCouponComponent extends Component
       $coupon->product_id = $this->product_id;
       $coupon->sale_percentage = $this->sale_percentage;
     $coupon->save();
-    Session()->flash('message','coupon has been created succesfully');
   }
     public function render()
     {

@@ -3,7 +3,7 @@
     font-size: 20px;
   }
 </style>
-<div style="border: 3px solid #ff2832; margin: auto;">
+<div  style="margin: 20px; padding: 20px; border: 3px solid #ff2832;">
 
     <div style="width: 90%; display: flex; margin: auto; height: 400px;">
         <fieldset>
