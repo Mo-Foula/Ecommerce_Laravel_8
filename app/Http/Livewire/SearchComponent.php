@@ -10,12 +10,12 @@ use App\Models\Category;
 
 class SearchComponent extends Component
 {
-    public $sorting;
-    public $pagesize;
 
     public $search;
     public $product_cat;
     public $product_cat_id;
+    public $sorting;
+    public $pagesize;
 
     public function mount()
     {

@@ -90,7 +90,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label class="col-md-4 control-label">Stock</label>
+                                <label class="col-md-4 control-label">Category</label>
                                 <div class="col-md-4">
                                     <select class="form-control" wire:model="category_id">
                                         @foreach($categories as $cat)
