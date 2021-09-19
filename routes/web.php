@@ -7,6 +7,8 @@ use App\http\Livewire\CartComponent;
 use App\http\Livewire\CheckoutComponent;
 use App\http\Livewire\ThankYouComponent;
 use App\Http\Livewire\User\UserDashboardComponent;
+use App\Http\Livewire\User\UserOrdersComponent;
+use App\Http\Livewire\User\UserOrderDetailsComponent;
 use App\Http\Livewire\Vender\VenderDashboardComponent;
 use App\Http\Livewire\Vender\VenderAddProductComponent;
 use App\Http\Livewire\Vender\VenderProductComponent;
@@ -52,7 +54,9 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 //for user
 Route::middleware(['auth:sanctum', 'verified'])->group(function(){
     Route::get('/user/account',UserDashboardComponent::class)->name('user.account');
-    Route::get('/user/purchase_history',UserDashboardComponent::class)->name('user.purchase_history');
+//  Route::get('/user/purchase_history',UserDashboardComponent::class)->name('user.purchase_history');    
+    Route::get('/user/orders',UserOrdersComponent::class)->name('user.orders');
+    Route::get('/user/orders/{order_id}',UserOrderDetailsComponent::class)->name('user.orderdetails');
 });
 
 //for vender

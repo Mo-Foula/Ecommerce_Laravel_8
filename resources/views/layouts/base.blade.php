@@ -48,96 +48,99 @@
 							<ul>
 								<!-- <li class="menu-item"><a title="Register or Login" href="login.html">Login</a></li>
 								<li class="menu-item"><a title="Register or Login" href="register.html">Register</a></li> -->
-{{--								<li class="menu-item lang-menu menu-item-has-children parent">--}}
-{{--									<a title="English" href="#"><span class="img label-before"><img src="{{asset('assets/images/lang-en.png')}}" alt="lang-en"></span>English<i class="fa fa-angle-down" aria-hidden="true"></i></a>--}}
-{{--									<ul class="submenu lang">--}}
-{{--										<li class="menu-item"><a title="hungary" href="#"><span class="img label-before"><img src="{{asset('assets/images/lang-hun.png')}}" alt="lang-hun"></span>Hungary</a></li>--}}
-{{--										<li class="menu-item"><a title="german" href="#"><span class="img label-before"><img src="{{asset('assets/images/lang-ger.png')}}" alt="lang-ger"></span>German</a></li>--}}
-{{--										<li class="menu-item"><a title="french" href="#"><span class="img label-before"><img src="{{asset('assets/images/lang-fra.png')}}" alt="lang-fre"></span>French</a></li>--}}
-{{--										<li class="menu-item"><a title="canada" href="#"><span class="img label-before"><img src="{{asset('assets/images/lang-can.png')}}" alt="lang-can"></span>Canada</a></li>--}}
-{{--									</ul>--}}
-{{--								</li>--}}
-{{--								<li class="menu-item menu-item-has-children parent">--}}
-{{--									<a title="Dollar (USD)" href="#">Dollar (USD)<i class="fa fa-angle-down" aria-hidden="true"></i></a>--}}
-{{--									<ul class="submenu curency">--}}
-{{--										<li class="menu-item">--}}
-{{--											<a title="Pound (GBP)" href="#">Pound (GBP)</a>--}}
-{{--										</li>--}}
-{{--										<li class="menu-item">--}}
-{{--											<a title="Euro (EUR)" href="#">Euro (EUR)</a>--}}
-{{--										</li>--}}
-{{--										<li class="menu-item">--}}
-{{--											<a title="Dollar (USD)" href="#">Dollar (USD)</a>--}}
-{{--										</li>--}}
-{{--									</ul>--}}
-{{--								</li>--}}
+								{{-- <li class="menu-item lang-menu menu-item-has-children parent">--}}
+								{{-- <a title="English" href="#"><span class="img label-before"><img src="{{asset('assets/images/lang-en.png')}}" alt="lang-en"></span>English<i class="fa fa-angle-down" aria-hidden="true"></i></a>--}}
+								{{-- <ul class="submenu lang">--}}
+								{{-- <li class="menu-item"><a title="hungary" href="#"><span class="img label-before"><img src="{{asset('assets/images/lang-hun.png')}}" alt="lang-hun"></span>Hungary</a></li>--}}
+								{{-- <li class="menu-item"><a title="german" href="#"><span class="img label-before"><img src="{{asset('assets/images/lang-ger.png')}}" alt="lang-ger"></span>German</a></li>--}}
+								{{-- <li class="menu-item"><a title="french" href="#"><span class="img label-before"><img src="{{asset('assets/images/lang-fra.png')}}" alt="lang-fre"></span>French</a></li>--}}
+								{{-- <li class="menu-item"><a title="canada" href="#"><span class="img label-before"><img src="{{asset('assets/images/lang-can.png')}}" alt="lang-can"></span>Canada</a></li>--}}
+								{{-- </ul>--}}
+								{{-- </li>--}}
+								{{-- <li class="menu-item menu-item-has-children parent">--}}
+								{{-- <a title="Dollar (USD)" href="#">Dollar (USD)<i class="fa fa-angle-down" aria-hidden="true"></i></a>--}}
+								{{-- <ul class="submenu curency">--}}
+								{{-- <li class="menu-item">--}}
+								{{-- <a title="Pound (GBP)" href="#">Pound (GBP)</a>--}}
+								{{-- </li>--}}
+								{{-- <li class="menu-item">--}}
+								{{-- <a title="Euro (EUR)" href="#">Euro (EUR)</a>--}}
+								{{-- </li>--}}
+								{{-- <li class="menu-item">--}}
+								{{-- <a title="Dollar (USD)" href="#">Dollar (USD)</a>--}}
+								{{-- </li>--}}
+								{{-- </ul>--}}
+								{{-- </li>--}}
 								@if(Route::has('login'))
-									@auth
-										@if(Auth::user()->utype ==='VEN')
-										<li class="menu-item menu-item-has-children parent">
-											<a title="My Account" href="#">My Account({{Auth::user()->name}})<i class="fa fa-angle-down" aria-hidden="true"></i></a>
-											<ul class="submenu curency">
-{{--												<li class="menu-item">--}}
-{{--													<a title="Dashboard" href="{{ route('vender.dashboard')}}">Dashboard</a>--}}
-{{--												</li>--}}
+								@auth
+								@if(Auth::user()->utype ==='VEN')
+								<li class="menu-item menu-item-has-children parent">
+									<a title="My Account" href="#">My Account({{Auth::user()->name}})<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+									<ul class="submenu curency">
+										{{-- <li class="menu-item">--}}
+										{{-- <a title="Dashboard" href="{{ route('vender.dashboard')}}">Dashboard</a>--}}
+										{{-- </li>--}}
 
-												<li class="menu-item">
-													<a title="Products" href="{{route('vender.products')}}">All Products</a>
-												</li>
-
-												<li class="menu-item">
-													<a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">	logout	</a>
-												</li>
-												<form id="logout-form" method="POST" action="{{route('logout')}}">
-													@csrf
-												</form>
-											</ul>
+										<li class="menu-item">
+											<a title="Products" href="{{route('vender.products')}}">All Products</a>
 										</li>
-                                        @elseif(Auth::user()->utype ==='USR')
-										<li class="menu-item menu-item-has-children parent">
-											<a title="My Account" href="#">My Account({{Auth::user()->name}})<i class="fa fa-angle-down" aria-hidden="true"></i></a>
-											<ul class="submenu curency">
-												<li class="menu-item">
-													<a title="My Account" href="{{route('user.account')}}">My Account</a>
-												</li>
-                                                <li class="menu-item">
-                                                    <a title="Purchase History" href="{{route('user.purchase_history')}}">Purchase History</a>
-                                                </li>
-												<li class="menu-item">
-													<a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">	logout	</a>
-												</li>
-												<form id="logout-form" method="POST" action="{{route('logout')}}">
-													@csrf
-												</form>
-											</ul>
-										</li>
-                                        @else
-                                            <li class="menu-item menu-item-has-children parent">
-                                                <a title="My Account" href="#">My Account({{Auth::user()->name}})<i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                                <ul class="submenu curency">
-                                                    <li class="menu-item">
-                                                        <a title="Discounts" href="{{ route('admin.discount')}}">Discounts</a>
-                                                    </li>
-                                                    <li class="menu-item">
-                                                        <a title="Products" href="{{ route('admin.products')}}">Products</a>
-                                                    </li>
-                                                    <li class="menu-item">
-                                                        <a title="Vendors" href="{{route('admin.vendor')}}">Vendors</a>
-                                                    </li>
 
-                                                    <li class="menu-item">
-                                                        <a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">	logout	</a>
-                                                    </li>
-                                                    <form id="logout-form" method="POST" action="{{route('logout')}}">
-                                                        @csrf
-                                                    </form>
-                                                </ul>
-                                            </li>
-										@endif
-									@else
-									<li class="menu-item"><a title="Register or Login" href="{{route('login')}}">Login</a></li>
-									<li class="menu-item"><a title="Register or Login" href="{{route('register')}}">Register</a></li>
-									@endif
+										<li class="menu-item">
+											<a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> logout </a>
+										</li>
+										<form id="logout-form" method="POST" action="{{route('logout')}}">
+											@csrf
+										</form>
+									</ul>
+								</li>
+								@elseif(Auth::user()->utype ==='USR')
+								<li class="menu-item menu-item-has-children parent">
+									<a title="My Account" href="#">My Account({{Auth::user()->name}})<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+									<ul class="submenu curency">
+										<li class="menu-item">
+											<a title="My Account" href="{{route('user.account')}}">My Account</a>
+										</li>
+										<li class="menu-item">
+											<a title="My Orders" href="{{route('user.orders')}}">My Orders</a>
+										</li>
+										<!-- <li class="menu-item">
+                                                    <a title="All Orders" href="{{route('user.orders')}}">All Orders</a>
+                                                </li> -->
+										<li class="menu-item">
+											<a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> logout </a>
+										</li>
+										<form id="logout-form" method="POST" action="{{route('logout')}}">
+											@csrf
+										</form>
+									</ul>
+								</li>
+								@else
+								<li class="menu-item menu-item-has-children parent">
+									<a title="My Account" href="#">My Account({{Auth::user()->name}})<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+									<ul class="submenu curency">
+										<li class="menu-item">
+											<a title="Discounts" href="{{ route('admin.discount')}}">Discounts</a>
+										</li>
+										<li class="menu-item">
+											<a title="Products" href="{{ route('admin.products')}}">Products</a>
+										</li>
+										<li class="menu-item">
+											<a title="Vendors" href="{{route('admin.vendor')}}">Vendors</a>
+										</li>
+
+										<li class="menu-item">
+											<a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> logout </a>
+										</li>
+										<form id="logout-form" method="POST" action="{{route('logout')}}">
+											@csrf
+										</form>
+									</ul>
+								</li>
+								@endif
+								@else
+								<li class="menu-item"><a title="Register or Login" href="{{route('login')}}">Login</a></li>
+								<li class="menu-item"><a title="Register or Login" href="{{route('register')}}">Register</a></li>
+								@endif
 								@endif
 
 							</ul>
@@ -329,18 +332,18 @@
 
 						<div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 box-twin-content ">
 							<div class="row">
-{{--								<div class="wrap-footer-item twin-item">--}}
-{{--									<h3 class="item-header">My Account</h3>--}}
-{{--									<div class="item-content">--}}
-{{--										<div class="wrap-vertical-nav">--}}
-{{--											<ul>--}}
-{{--												<li class="menu-item"><a href="{{route('contact_us')}}" class="link-term">My Account</a></li>--}}
-{{--                                                <li class="menu-item"><a href="{{route('user.purchase_history')}}" class="link-term">Order History</a></li>--}}
-{{--												<li class="menu-item"><a href="#" class="link-term">Wish list</a></li>--}}
-{{--											</ul>--}}
-{{--										</div>--}}
-{{--									</div>--}}
-{{--								</div>--}}
+								{{-- <div class="wrap-footer-item twin-item">--}}
+								{{-- <h3 class="item-header">My Account</h3>--}}
+								{{-- <div class="item-content">--}}
+								{{-- <div class="wrap-vertical-nav">--}}
+								{{-- <ul>--}}
+								{{-- <li class="menu-item"><a href="{{route('contact_us')}}" class="link-term">My Account</a></li>--}}
+								{{-- <li class="menu-item"><a href="{{route('user.orders')}}" class="link-term">Order History</a></li>--}}
+								{{-- <li class="menu-item"><a href="#" class="link-term">Wish list</a></li>--}}
+								{{-- </ul>--}}
+								{{-- </div>--}}
+								{{-- </div>--}}
+								{{-- </div>--}}
 								<div class="wrap-footer-item twin-item">
 									<h3 class="item-header">Infomation</h3>
 									<div class="item-content">
@@ -348,7 +351,7 @@
 											<ul>
 												<li class="menu-item"><a href="{{route('contact_us')}}" class="link-term">Contact Us</a></li>
 												<li class="menu-item"><a href="{{route('about_us')}}" class="link-term">About Us</a></li>
-                                                <li class="menu-item"><a href="{{route('user.purchase_history')}}" class="link-term">Order History</a></li>
+												<li class="menu-item"><a href="{{route('user.orders')}}" class="link-term">Order History</a></li>
 											</ul>
 										</div>
 									</div>
