@@ -17,7 +17,7 @@ class VenderEditProductComponent extends Component
     public $slug;
     public $description;
     public $regular_price;
-    public $sale_price;
+    //public $sale_price;
     public $stock_status;
     public $quantity;
     public $image;
@@ -32,7 +32,7 @@ class VenderEditProductComponent extends Component
         $this->slug = $product->slug;
         $this->description = $product->description;
         $this->regular_price = $product->regular_price;
-        $this->sale_price = $product->sale_price;
+       // $this->sale_price = $product->sale_price;
         $this->stock_status = $product->stock_status;
         $this->category_id = $product->category_id;
        $this->quantity = $product->quantity;
@@ -52,7 +52,7 @@ class VenderEditProductComponent extends Component
         $product->slug=$this->slug;
         $product->description=$this->description;
         $product->regular_price=$this->regular_price;
-        $product->sale_price=$this->sale_price;
+       // $product->sale_price=$this->sale_price;
         $product->stock_status=$this->stock_status;
         $product->category_id = $this->category_id;
         $product->quantity=$this->quantity;

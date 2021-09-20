@@ -18,7 +18,7 @@ class VenderAddProductComponent extends Component
     public $slug;
     public $description;
     public $regular_price;
-    public $sale_price;
+    //public $sale_price;
     public $stock_status;
     public $quantity;
     public $vendor_id;
@@ -43,7 +43,7 @@ class VenderAddProductComponent extends Component
         $product->slug = $this->slug;
         $product->description = $this->description;
         $product->regular_price = $this->regular_price;
-        $product->sale_price = $this->sale_price;
+       // $product->sale_price = $this->sale_price;
         $product->stock_status = $this->stock_status;
 //        $product->vendor_id=$this->vendor_id;
         $product->vendor_id = Auth::user()->id;

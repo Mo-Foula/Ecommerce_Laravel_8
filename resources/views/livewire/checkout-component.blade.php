@@ -56,7 +56,7 @@
 							</label>
 						</div>
 						<p class="summary-info grand-total"><span>Grand Total</span> <span class="grand-total-price">${{Cart::total()}}</span></p>
-						<a href="thanks" class="btn btn-medium">Place order now</a>
+						<a href="thanks" class="btn btn-medium" wire:click.prevent="deleteAll()">Place order now</a>
 					</div>
 					<div class="summary-item shipping-method">
 						<h4 class="title-box">Discount Codes</h4>
