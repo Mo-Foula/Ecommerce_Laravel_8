@@ -29,7 +29,7 @@
             <div class="aboutus-box-score equal-elem ">
                 <b class="box-score-title">10 thousands</b>
                 <span class="sub-title">Users of the site</span>
-                <p class="desc">We hope to reach to all online shopping users around the world</p>
+                <p class="desc">We hope to reach to all online shopping users around the world.</p>
             </div>
         </div>
     </div>
@@ -90,15 +90,15 @@
             <td><a href="" target="_blank"></a></td>
           </tr>
           <tr>
-            <td>Maritte</td>
+            <td>Maritte Magdi</td>
             <td>Faculty of engineering</td>
-            <td></td>
-            <td><a href="" target="_blank"></a></td>
+            <td>mariettemagdi@yahoo.com</td>
+            <td><a href="https://www.linkedin.com/in/mariette-magdi-415012217/" target="_blank">https://www.linkedin.com/in/mariette-magdi-415012217/</a></td>
           </tr>
           <tr>
-            <td>Martina</td>
+            <td>Martina Mamdouh</td>
             <td>Faculty of engineering</td>
-            <td></td>
+            <td>martina.mamdouh2000@gmail.com</td>
             <td><a href="" target="_blank"></a></td>
           </tr>
         </table>
