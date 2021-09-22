@@ -17,7 +17,13 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/chosen.min.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/color-01.css') }}">
-
+	<style>
+table, th, td {
+  border:2px solid #ff2832;
+	padding: 10px;
+	margin: 10px;
+}
+</style>
 	@livewireStyles
 </head>
 
