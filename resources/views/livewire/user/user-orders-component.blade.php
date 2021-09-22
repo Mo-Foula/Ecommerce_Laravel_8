@@ -30,8 +30,8 @@
                                     <th>Email</th>
                                     <th>Zipcode</th>
                                     <th>Status</th>
-                                    <th>Order Date</th>
-                                    <th>Action</th> -->
+                                    <th>Order Date</th> -->
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
