@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AuthVender
 {
@@ -16,7 +17,7 @@ class AuthVender
      */
     public function handle(Request $request, Closure $next)
     {
-        if(session('utype')=== 'VEN')
+        if(Auth::user()->utype=== 'VEN')
         {
             return $next ($request);
         }
