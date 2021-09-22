@@ -1,6 +1,6 @@
 <div>
-<div style="width: 90%; margin: auto; border: solid 3px #ff2832;">
-  <table class="table table-striped">
+<div style="width: 95%; margin: auto; border: solid 3px #ff2832; margin-top: 10px; margin-bottom: 10px;">
+  <table class="table table-striped" style="width: 95%; margin:auto; margin-top: 10px; margin-bottom: 10px;">
     <thead>
       <tr>
         <th scope="col">Id</th>

@@ -59,50 +59,6 @@
     <div class="our-team-info" style="text-align: center">
         <h4 class="title-box">Our developing team</h4>
         <table style="width: 100%;">
-<<<<<<< HEAD
-          <tr>
-            <th>Name</th>
-            <th>Faculty</th>
-            <th>Email</th>
-            <th>LinkedIn Profile</th>
-          </tr>
-          <tr>
-            <td>Youssef Khafaga</td>
-            <td>Faculty of engineering</td>
-            <td>ykhfaga@gmail.com</td>
-            <td><a href="https://www.linkedin.com/in/youssef-khafaga-655b18205" target="_blank">https://www.linkedin.com/in/youssef-khafaga-655b18205</a></td>
-          </tr>
-          <tr>
-            <td>Mohammed Foula</td>
-            <td>Faculty of science</td>
-            <td></td>
-            <td><a href="" target="_blank"></a></td>
-          </tr>
-          <tr>
-            <td>Aya Adel</td>
-            <td>Faculty of science</td>
-            <td></td>
-            <td><a href="" target="_blank"></a></td>
-          </tr>
-          <tr>
-            <td>Theodora</td>
-            <td>Faculty of engineering</td>
-            <td></td>
-            <td><a href="" target="_blank"></a></td>
-          </tr>
-          <tr>
-            <td>Maritte Magdi</td>
-            <td>Faculty of engineering</td>
-            <td>mariettemagdi@yahoo.com</td>
-            <td><a href="https://www.linkedin.com/in/mariette-magdi-415012217/" target="_blank">https://www.linkedin.com/in/mariette-magdi-415012217/</a></td>
-          </tr>
-          <tr>
-            <td>Martina Mamdouh</td>
-            <td>Faculty of engineering</td>
-            <td>martina.mamdouh2000@gmail.com</td>
-            <td><a href="" target="_blank"></a></td>
-          </tr>
-=======
             <tr >
                 <th style="text-align: center">Name</th>
                 <th style="text-align: center">Faculty</th>
@@ -145,7 +101,6 @@
                 <td>martina.mamdouh2000@gmail.com</td>
                 <td><a href="" target="_blank"></a></td>
             </tr>
->>>>>>> 7bb4a66346a2df27fcf281f88131ec48d51f0270
         </table>
     </div>
 

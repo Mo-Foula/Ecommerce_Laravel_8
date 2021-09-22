@@ -130,6 +130,9 @@ table, th, td {
                                                     <li class="menu-item">
                                                         <a title="Vendors" href="{{route('admin.vendor')}}">Vendors</a>
                                                     </li>
+																										<li class="menu-item">
+                                                        <a title="Categories" href="{{route('admin.category.list')}}">Categories</a>
+                                                    </li>
 
                                                     <li class="menu-item">
                                                         <a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">	logout	</a>
@@ -175,7 +178,7 @@ table, th, td {
 									<i class="fa fa-shopping-basket" aria-hidden="true"></i>
 									<div class="left-info">
 										@if(Cart::count() >0 )
-										 <span class="index">{{Cart::count()}} items</span> 
+										 <span class="index">{{Cart::count()}} items</span>
 										 @endif
 										<span class="title">CART</span>
 									</div>
