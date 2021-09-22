@@ -53,7 +53,7 @@
                             </tbody>
                         </table>
                             @if(session()->has('delete'))
-                                <div style="color: #00bf3f">{{session('delete')}}</div>
+                                <div class="alert alert-success"">{{session('delete')}}</div>
                             @endif                    </div>
                 </div>
             </div>

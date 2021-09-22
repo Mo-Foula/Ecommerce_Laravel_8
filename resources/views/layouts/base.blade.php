@@ -123,6 +123,9 @@
                                                     <li class="menu-item">
                                                         <a title="Vendors" href="{{route('admin.vendor')}}">Vendors</a>
                                                     </li>
+                                                    <li class="menu-item">
+                                                        <a title="manage home slider" href="{{route('admin.homeslider')}}">Manage HomeSlider</a>
+                                                    </li>
 
                                                     <li class="menu-item">
                                                         <a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">	logout	</a>
