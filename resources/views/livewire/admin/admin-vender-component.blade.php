@@ -27,7 +27,7 @@
                         @if(Session::has('message'))
                             <div class="alert alert-success" role="alert">{{Session::get('message')}}</div>
                         @endif
-                        <table class="table table-striped">
+                        <table class="table table-striped" >
                             <thead>
                             <tr>
                                 <th>Id</th>
@@ -35,6 +35,7 @@
                                 <th>Name</th>
                                 <th>Email</th>
 
+                                <th>Delete</th>
                             </tr>
                             </thead>
                             <tbody>

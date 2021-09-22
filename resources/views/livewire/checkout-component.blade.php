@@ -36,13 +36,13 @@
 							<label for="country">Country<span>*</span></label>
 							<input id="country" type="text" name="country" value="" placeholder="United States">
 						</p>
-					
+
 					</form>
 				</div>
 				<div class="summary summary-checkout">
 					<div class="summary-item payment-method">
 						<h4 class="title-box">Payment Method</h4>
-						
+
 						<div class="choose-payment-methods">
 							<label class="payment-method">
 								<input name="payment-method" id="payment-method-visa" value="visa" type="radio">
@@ -52,23 +52,23 @@
 							<label class="payment-method">
 								<input name="payment-method" id="payment-method-cash" value="cash" type="radio">
 								<span>cash on delivery</span>
-								
+
 							</label>
 						</div>
 						<p class="summary-info grand-total"><span>Grand Total</span> <span class="grand-total-price">${{Cart::total()}}</span></p>
 						<a href="thanks" class="btn btn-medium">Place order now</a>
 					</div>
-					<div class="summary-item shipping-method">
-						<h4 class="title-box">Discount Codes</h4>
-						<p class="row-in-form">
-							<label for="coupon-code">Enter Your Coupon code:</label>
-							<input id="coupon-code" type="text" name="coupon-code" value="" placeholder="">	
-						</p>
-						<a href="#" class="btn btn-small">Apply</a>
-					</div>
+{{--					<div class="summary-item shipping-method">--}}
+{{--						<h4 class="title-box">Discount Codes</h4>--}}
+{{--						<p class="row-in-form">--}}
+{{--							<label for="coupon-code">Enter Your Coupon code:</label>--}}
+{{--							<input id="coupon-code" type="text" name="coupon-code" value="" placeholder="">	--}}
+{{--						</p>--}}
+{{--						<a href="#" class="btn btn-small">Apply</a>--}}
+{{--					</div>--}}
 				</div>
 
-				
+
 
 			</div><!--end main content area-->
 		</div><!--end container-->

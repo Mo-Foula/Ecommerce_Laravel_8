@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Coupon;
 use Livewire\Component;
 use App\Models\Product;
 use Livewire\WithPagination;
@@ -25,7 +26,14 @@ class ShopComponent extends Component
         $this->sorting = "default";
         $this->pagesize = 12;
     }
-
+    function applySale($products){
+        foreach ($products as $prod){
+            $id = $prod->id;
+            $field = Coupon::where('product_id','=',$id)->first();
+            $prod->price = $prod->price * (100-$field->sale_percentage)/100.0;
+        }
+        return $products;
+    }
     public function render()
     {
         if($this->sorting == 'date'){
@@ -37,6 +45,16 @@ class ShopComponent extends Component
         }else{
             $products = Product::paginate($this->pagesize);
         }
+
+
+        foreach ($products as $key => $prod){
+            $ide = $prod->id;
+            $field = Coupon::where('product_id','=',$ide)->first();
+            if($field != null){
+                $products[$key]->regular_price *=  (100-$field->sale_percentage)/100.0;
+            }
+        }
+
 
         $cats = Category::all();
 

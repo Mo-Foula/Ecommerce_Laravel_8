@@ -19,7 +19,7 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/color-01.css') }}">
 	<style>
 table, th, td {
-  border:2px solid #ff2832;
+  /*border:2px solid #ff2832;*/
 	padding: 10px;
 	margin: 10px;
 }
@@ -107,7 +107,7 @@ table, th, td {
 													<a title="My Account" href="{{route('user.account',['id'=>Auth::user()->id])}}">My Account</a>
 												</li>
                                                 <li class="menu-item">
-                                                    <a title="Purchase History" href="{{route('user.purchase_history')}}">Purchase History</a>
+                                                    <a title="Purchase History" href="{{route('user.orders')}}">Purchase History</a>
                                                 </li>
 												<li class="menu-item">
 													<a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">	logout	</a>
@@ -171,11 +171,11 @@ table, th, td {
 {{--								</a>--}}
 {{--							</div>--}}
 							<div class="wrap-icon-section minicart">
-								<a href="#" class="link-direction">
+								<a href="cart" class="link-direction">
 									<i class="fa fa-shopping-basket" aria-hidden="true"></i>
 									<div class="left-info">
 										@if(Cart::count() >0 )
-										 <span class="index">{{Cart::count()}} items</span> 
+										 <span class="index">{{Cart::count()}} items</span>
 										 @endif
 										<span class="title">CART</span>
 									</div>
@@ -354,7 +354,7 @@ table, th, td {
 											<ul>
 												<li class="menu-item"><a href="{{route('contact_us')}}" class="link-term">Contact Us</a></li>
 												<li class="menu-item"><a href="{{route('about_us')}}" class="link-term">About Us</a></li>
-                                                <li class="menu-item"><a href="{{route('user.purchase_history')}}" class="link-term">Order History</a></li>
+                                                <li class="menu-item"><a href="{{route('user.orders')}}" class="link-term">Order History</a></li>
 											</ul>
 										</div>
 									</div>

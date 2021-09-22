@@ -87,7 +87,7 @@
                 <td>Theodora</td>
                 <td>Faculty of engineering</td>
                 <td>theodoragbotros@gmail.com</td>
-                <td><a href="" target="_blank"></a></td>
+                <td><a href="http://linkedin.com/in/theodora-george-951a49216" target="_blank">Theodora</a></td>
             </tr>
             <tr>
                 <td>Mariette</td>

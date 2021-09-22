@@ -19,6 +19,6 @@ class DatabaseSeeder extends Seeder
 //        \App\Models\Product::factory(22)->create();
 //        \App\Models\admin::factory(1)->create();
 //        \App\Models\vendor::factory(1)->create();
-          \App\Models\Coupon::factory(21)->create();
+//          \App\Models\Coupon::factory(21)->create();
     }
 }
