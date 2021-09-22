@@ -19,6 +19,7 @@ class CreateProductsTable extends Migration
             $table->string('slug')->unique();
             $table->text('description');
             $table->decimal('regular_price');
+            $table->decimal('sale_price')->nullable();
             $table->enum('stock_status',['instock','outofstock']);
             $table->unsignedInteger('quantity')->default(10);
             $table->string('image')->nullable();
