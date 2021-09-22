@@ -29,7 +29,7 @@
             <div class="aboutus-box-score equal-elem ">
                 <b class="box-score-title">10 thousands</b>
                 <span class="sub-title">Users of the site</span>
-                <p class="desc">We hope to reach to all online shopping users around the world</p>
+                <p class="desc">We hope to reach to all online shopping users around the world.</p>
             </div>
         </div>
     </div>

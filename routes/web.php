@@ -16,6 +16,9 @@ use App\Http\Livewire\Vender\VenderProductComponent;
 use App\Http\Livewire\Vender\VenderEditProductComponent;
 use App\Http\Livewire\DetailsComponent;
 use App\Providers\RouteServiceProvider;
+use App\Http\Livewire\Admin\AdminCategoryList;
+use App\Http\Livewire\Admin\AdminAddCategory;
+use App\Http\Livewire\Admin\AdminRemoveCategory;
 
 /*
 |--------------------------------------------------------------------------
@@ -84,6 +87,9 @@ Route::middleware(['auth:sanctum','verified'])->group(function(){
 
     Route::get('/admin/discount',\App\Http\Livewire\Admin\AdminDiscountComponent::class)->name('admin.discount');
     Route::get('/admin/vendor/add',\App\Http\Livewire\Admin\Adminaddvendorcomponent::class)->name('admin.addvendor');
+
+    Route::get('/admin/Categories',\App\Http\Livewire\Admin\AdminCategoryList::class)->name('admin.category.list');
+    Route::get('/admin/Add/Categories',\App\Http\Livewire\Admin\AdminAddCategory::class)->name('admin.add.Categories');
 
 });
 
