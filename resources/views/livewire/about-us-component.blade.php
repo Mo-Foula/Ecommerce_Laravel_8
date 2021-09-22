@@ -56,55 +56,55 @@
 
     </div>
 
-    <div class="our-team-info">
+    <div class="our-team-info" style="text-align: center">
         <h4 class="title-box">Our developing team</h4>
         <table style="width: 100%;">
-          <tr>
-            <th>Name</th>
-            <th>Faculty</th>
-            <th>Email</th>
-            <th>LinkedIn Profile</th>
-          </tr>
-          <tr>
-            <td>Youssef Khafaga</td>
-            <td>Faculty of engineering</td>
-            <td>ykhfaga@gmail.com</td>
-            <td><a href="https://www.linkedin.com/in/youssef-khafaga-655b18205" target="_blank">https://www.linkedin.com/in/youssef-khafaga-655b18205</a></td>
-          </tr>
-          <tr>
-            <td>Mohammed Foula</td>
-            <td>Faculty of science</td>
-            <td></td>
-            <td><a href="" target="_blank"></a></td>
-          </tr>
-          <tr>
-            <td>Aya Adel</td>
-            <td>Faculty of science</td>
-            <td></td>
-            <td><a href="" target="_blank"></a></td>
-          </tr>
-          <tr>
-            <td>Theodora</td>
-            <td>Faculty of engineering</td>
-            <td></td>
-            <td><a href="" target="_blank"></a></td>
-          </tr>
-          <tr>
-            <td>Maritte</td>
-            <td>Faculty of engineering</td>
-            <td></td>
-            <td><a href="" target="_blank"></a></td>
-          </tr>
-          <tr>
-            <td>Martina</td>
-            <td>Faculty of engineering</td>
-            <td></td>
-            <td><a href="" target="_blank"></a></td>
-          </tr>
+            <tr >
+                <th style="text-align: center">Name</th>
+                <th style="text-align: center">Faculty</th>
+                <th style="text-align: center">Email</th>
+                <th style="text-align: center">LinkedIn Profile</th>
+            </tr>
+            <tr>
+                <td>Youssef Khafaga</td>
+                <td>Faculty of engineering</td>
+                <td>ykhfaga@gmail.com</td>
+                <td><a href="https://www.linkedin.com/in/youssef-khafaga-655b18205" target="_blank">Youssef Khafaga</a></td>
+            </tr>
+            <tr>
+                <td>Mohamed Foula</td>
+                <td>Faculty of science SIM</td>
+                <td>sim.mohamed.foula@alexu.edu.eg</td>
+                <td><a href="https://www.linkedin.com/in/mohamed-foula/" target="_blank">Mohamed Foula</a></td>
+            </tr>
+            <tr>
+                <td>Aya Adel</td>
+                <td>Faculty of science SIM</td>
+                <td>sim.aya.adel@alexu.edu.eg</td>
+                <td><a href="https://www.linkedin.com/in/aya-adel-398255216" target="_blank">Aya Adel</a></td>
+            </tr>
+            <tr>
+                <td>Theodora</td>
+                <td>Faculty of engineering</td>
+                <td>theodoragbotros@gmail.com</td>
+                <td><a href="" target="_blank"></a></td>
+            </tr>
+            <tr>
+                <td>Mariette</td>
+                <td>Faculty of engineering</td>
+                <td>mariettemagdi@yahoo.com</td>
+                <td><a href="https://www.linkedin.com/in/mariette-magdi-415012217/" target="_blank">Mariette Magdi</a></td>
+            </tr>
+            <tr>
+                <td>Martina</td>
+                <td>Faculty of engineering</td>
+                <td>martina.mamdouh2000@gmail.com</td>
+                <td><a href="" target="_blank"></a></td>
+            </tr>
         </table>
-        </div>
-
     </div>
+
+</div>
     <!-- </div> -->
 
 
