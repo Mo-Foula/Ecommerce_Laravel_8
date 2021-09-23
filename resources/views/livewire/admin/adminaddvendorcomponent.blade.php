@@ -23,7 +23,7 @@
             <div class="col-md-4">
                 <input type="text" placeholder="Name" class="form-control input-md" Wire:model="name">
                 @error('name')
-                <span style="color:red">{{$message}}</span>
+                <span class="alert alert-warning">{{$message}}</span>
                 @enderror
             </div>
         </div>
@@ -32,7 +32,7 @@
             <div class="col-md-4">
                 <input type="text" placeholder="Email" class="form-control input-md" wire:model="email">
                 @error('email')
-                <span style="color:red">{{$message}}</span>
+                <span class="alert alert-warning">{{$message}}</span>
                 @enderror
             </div>
         </div>
@@ -41,7 +41,7 @@
             <div class="col-md-4">
                 <input type="password" placeholder="password" class="form-control input-md" wire:model="password">
                 @error('password')
-                <span style="color:red">{{$message}}</span>
+                <span class="alert alert-warning">{{$message}}</span>
                 @enderror
             </div>
         </div>
@@ -57,7 +57,7 @@
             <div class="col-md-4">
                 <button type="submit " class="btn btn-primary">Submit</button>
                 @if(session()->has('success'))
-                    <div style="color: #00bf3f">{{session('success')}}</div>
+                    <div class="alert alert-success">{{session('success')}}</div>
                 @endif
             </div>
         </div>

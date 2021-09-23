@@ -33,6 +33,7 @@
                                 <th>Name </th>
                                 <th>Stock</th>
                                 <th>Price</th>
+                                <th>sale price</th>
                                 <th>Date</th>
                                 <th>Action</th>
                             </tr>
@@ -45,6 +46,8 @@
                                     <td>{{$product->name}}</td>
                                     <td>{{$product->stock_status}}</td>
                                     <td>{{$product->regular_price}}</td>
+                                    <td>{{$product->sale_price}}</td>
+                                    <td>{{ \App\Models\Category::where('id','=',$product->category_id)->first()->name}}</td>
                                     <td>{{$product->created_at}}</td>
                                     <td>
                                         <a href="{{route('admin.edit_products',['product_slug'=>$product->slug])}}"> <i class="fa fa-edit fa-2x text-info"></i></a>

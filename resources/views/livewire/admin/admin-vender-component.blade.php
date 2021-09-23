@@ -60,6 +60,9 @@
                         @endif
                     </div>
                     {{$Vendors->links()}}
+{{--                            @if(session()->has('delete'))--}}
+{{--                                <div class="alert alert-success"">{{session('delete')}}</div>--}}
+{{--                            @endif                    </div>--}}
                 </div>
             </div>
         </div>

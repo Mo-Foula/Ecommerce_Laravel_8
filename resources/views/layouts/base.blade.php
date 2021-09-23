@@ -130,8 +130,13 @@ table, th, td {
                                                     <li class="menu-item">
                                                         <a title="Vendors" href="{{route('admin.vendor')}}">Vendors</a>
                                                     </li>
+
 																										<li class="menu-item">
                                                         <a title="Categories" href="{{route('admin.category.list')}}">Categories</a>
+
+                                                    <li class="menu-item">
+                                                        <a title="manage home slider" href="{{route('admin.homeslider')}}">Manage HomeSlider</a>
+
                                                     </li>
 
                                                     <li class="menu-item">

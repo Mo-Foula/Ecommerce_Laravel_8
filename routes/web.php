@@ -73,6 +73,7 @@ Route::middleware(['auth:sanctum', 'verified','authvender'])->group(function(){
     Route::get('/vender/product',VenderProductComponent::class)->name('vender.products');
     Route::get('/vender/product/add',VenderAddProductComponent::class)->name('vender.addproduct');
     Route::get('/vender/product/edit/{product_slug}',VenderEditProductComponent::class)->name('vender.editproduct');
+
 });
 
 Route::middleware(['auth:sanctum','verified'])->group(function(){
@@ -88,8 +89,14 @@ Route::middleware(['auth:sanctum','verified'])->group(function(){
     Route::get('/admin/discount',\App\Http\Livewire\Admin\AdminDiscountComponent::class)->name('admin.discount');
     Route::get('/admin/vendor/add',\App\Http\Livewire\Admin\Adminaddvendorcomponent::class)->name('admin.addvendor');
 
+
     Route::get('/admin/Categories',\App\Http\Livewire\Admin\AdminCategoryList::class)->name('admin.category.list');
     Route::get('/admin/Add/Categories',\App\Http\Livewire\Admin\AdminAddCategory::class)->name('admin.add.Categories');
+
+
+    Route::get('/admin/slider',\App\Http\Livewire\Admin\AdminHomeSlider::class)->name('admin.homeslider');
+    Route::get('/admin/slider/add',\App\Http\Livewire\Admin\AdminAddHomeSliderComponent::class)->name('admin.addhomeslider');
+    Route::get('/admin/slider/edit/{slide_id}',\App\Http\Livewire\Admin\AdminEditHomeSliderComponent::class)->name('admin.edithomeslider');
 
 });
 
