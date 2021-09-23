@@ -83,9 +83,12 @@ table, th, td {
 										<li class="menu-item menu-item-has-children parent">
 											<a title="My Account" href="{{route('user.account',['id'=>Auth::user()->id])}}">My Account ( {{Auth::user()->name}} )<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 											<ul class="submenu curency">
-{{--												<li class="menu-item">--}}
-{{--													<a title="Dashboard" href="{{ route('vender.dashboard')}}">Dashboard</a>--}}
-{{--												</li>--}}
+												<li class="menu-item">
+													<a title="My Account" href="{{route('user.account',['id'=>Auth::user()->id])}}">My Account</a>
+												</li>
+{{--											<li class="menu-item">--}}
+{{--												<a title="Dashboard" href="{{ route('vender.dashboard')}}">Dashboard</a>--}}
+{{--											</li>--}}
 
 												<li class="menu-item">
 													<a title="Products" href="{{route('vender.products')}}">All Products</a>
@@ -121,6 +124,9 @@ table, th, td {
                                             <li class="menu-item menu-item-has-children parent">
                                                 <a title="My Account" href="{{route('user.account',['id'=>Auth::user()->id])}}">My Account ( {{Auth::user()->name}} )<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                                                 <ul class="submenu curency">
+													<li class="menu-item">
+														<a title="My Account" href="{{route('user.account',['id'=>Auth::user()->id])}}">My Account</a>
+													</li>
                                                     <li class="menu-item">
                                                         <a title="Discounts" href="{{ route('admin.coupon')}}">Discounts</a>
                                                     </li>
